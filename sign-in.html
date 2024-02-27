@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+    <section class="login-section" style="background: url(assets/image/bg.jpg);background-position: center;background-size: cover;width: 100%;height: 100vh;padding-top: 60px;position: relative;overflow: hidden;">
+        <div class="overlaybg"></div>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-12">
+                    <div class="top-logo" style="position: relative;">
+                        <img src="assets/image/logo.png" alt="logo" style="width: 190px;" class="logo-2">
+                    </div>
+
+                    <form action="">
+
+                        <h5 class="form_top_text text-white pt-5 pb-2 text-fluid" style="font-size: 18px;"> Login to your account! </h5>
+
+                        <div class="user">
+                            <input type="email" class="mb-3" placeholder="Email">
+                            <input type="password" class="mb-3" placeholder="Password">
+                        </div>
+                        <a href="reset-pass.html" class="nav-link pb-3"> Forgot your password </a>
+                        <!-- <div class="user">
+                            <label for="username">Login to your account!</label> <br>
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+
+                        <div class="pwd">
+                            <input type="password" name="pwd" placeholder="Email">
+                        </div>
+                        <div>
+                            <a href="reset-pass.html" class="nav-link">
+                                Forgot your password?
+                            </a>
+                        </div> -->
+                       
+                        <div class="
+                        g-recaptcha h-20 d-flex align-items-center justify-content-center"
+                        data-sitekey="6Lc7tH8pAAAAAHHkFTcCqI9ldq5rOSNfOf1gnVL_"></div><br/>
+
+                        <div class="g-recaptcha" data-sitekey=""></div>
+
+                        <button class="btn btn-primary" type="submit" style="width: 320px;margin-bottom: 20px;"> <a href="dashboard-home.html" style="color: #fff; text-decoration: none;font-size: 11px;">Login</a></button>
+                        <p class="para mt-2" style="margin-bottom: 20px;font-size: 11px;">Don’t have an account?
+
+                            <a href="#" style="font-size: 11px;">Sign up here</a>
+                        </p>
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+</body>
+
+</html>

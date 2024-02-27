@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
+
+    <!-- js link  -->
+
+    
+
+
+</head>
+
+<body class="main-bg">
+    <div class="bg-img">
+        <img src="assets/image/buy-bg1.png" alt="" class="img-fluid">
+    </div>
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-3">
+                    <div class="logo">
+                        <img src="assets/image/logo.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-9">
+                    <div class="topbar-nav-right">
+
+                        <ul class="topbar-button">
+                            <li>
+                                <a href="#">
+                                    <img src="assets/image/bell.png" alt="" class="img-fluid">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-outline-light">
+                                    <span><img src="assets/image/country.png" alt="" class="img-fluid"></span>English
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    Connect Wallet
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="assets/image/profile.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="profile-user">
+                                <h3>Welcome</h3>
+                                <h2>Lissa watson</h2>
+                            </div>
+                            <div class="drop-button">
+                                <span class="down-icon">
+                                    <img src="assets/image/down.png" alt="" class="img-fluid">
+                                </span>
+                                <div class="user-dropdown">
+                                    <div class="user-pro">
+                                      <div class="user_img text-center">
+                                        <img src="assets/image/pro_img.png" alt="" class="img-fluid"> 
+                                      </div>
+                                      <h2>Lissa watsone (UD00001)</h2>
+                                      <p>lissawatson@gmail.com</p>
+                                    </div>
+                                    <span id="link1"><a href="#"><span><img src="assets/image/user-icon.png" alt="" class="img-fluid"></span>My profile</a></span>
+                                    <span id="link2"><a href="#"><span><img src="assets/image/lock.png" alt="" class="img-fluid"></span>Change password</a></span>
+                                    <span id="link3"><a href="#"><span><img src="assets/image/logout.png" alt="" class="img-fluid"></span>Logout</a></span>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <ul class="header-item">
+                    <li class="header-link-list">
+                        <a href="dashboard-home.html">Home</a>
+                    </li>
+                    <li class="header-link-list">
+                        <a href="buyetf.html" class="active">Buy ETFS</a>
+                    </li>
+                    <li class="header-link-list">
+                        <a href="transaction.html">Transactions</a>
+                    </li>
+                    <li class="header-link-list">
+                        <a href="activity.html">Activity log</a>
+                    </li>
+                    <li class="header-link-list">
+                        <a href="securityy.html">Security </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- buy etf section start  -->
+
+    <section class="buy-etf-section">
+        <div class="container">
+            <div class="buy-etf-content">
+                <div class="heading">
+                    <h2 class="title">Buy ETFS</h2>
+                </div>
+                <div class="buy-etf-detail">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-7">
+                            <div class="left-content">
+                                <div class="purchase-item">
+                                    <div class="heading">
+                                        <h2>Choose currency and calculate ETFS token price</h2>
+                                        <p>You can buy our ETFS token using the below currency choices to become part of
+                                            our project.</p>
+                                    </div>
+                                    <div class="form">
+                                        <div class="mb-3">
+                                            <span><label for="select">Select cryptocurrency </label></span>
+                                            <select id="cryptoSelect" class="form-select">
+                                                <option value="BTC">Bitcoin (BTC)</option>
+                                                <option value="ETH">Ethereum (ETH)</option>
+                                                <option value="XRP">Ripple (XRP)</option>
+                                                <option value="LTC">Litecoin (LTC)</option>
+                                                <option value="BCH">Bitcoin Cash (BCH)</option>
+                                                <option value="ADA">Cardano (ADA)</option>
+                                                <option value="DOT">Polkadot (DOT)</option>
+                                                <option value="XLM">Stellar (XLM)</option>
+                                                <option value="LINK">Chainlink (LINK)</option>
+                                                <option value="DOGE">Dogecoin (DOGE)</option>
+                                                <option value="BNB">Binance Coin (BNB)</option>
+                                                <option value="USDT">Tether (USDT)</option>
+                                                <option value="SOL">Solana (SOL)</option>
+                                                <option value="USDC">USD Coin (USDC)</option>
+                                                <option value="XMR">Monero (XMR)</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="mb-3">
+                                            <span><label for="usd">Enter amount in USD</label></span>
+                                            <input type="number" class="form-control" id="usd"
+                                                placeholder="Amount (USD)">
+                                        </div>
+                                        <div class="mb-3">
+                                            <span><label for="amount">Crypto amount</label></span>
+                                            <input type="number" class="form-control" id="amount"
+                                                placeholder="Enter amount">
+                                        </div>
+                                        <div class="mb-3">
+                                            <span><label for="token">Total ETFS tokens you wil recive</label></span>
+                                            <input type="text" class="form-control" id="token"
+                                                placeholder="ETFS tokens">
+                                        </div>
+                                        <div class="mb-3 input-checkbox">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                I read and agree to <a href="#"> ETFS token purchase agreement </a> and
+                                                <a href="#"> privacy policy.</a>
+                                            </label>
+                                        </div>
+                                        <div class="mb-3 pur">
+                                            <a href="#" class="btn btn-primary pur">Make purchase </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-5">
+                            <div class="right-content">
+                                <div class="balance-item">
+                                    <div class="token">
+                                        <div class="logo-icon">
+                                            <img src="assets/image/logo-icon.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="token-detail">
+                                            <h3>Token balance</h3>
+                                            <h2>0.00 ETFS</h2>
+                                        </div>
+                                    </div>
+                                    <div class="contribution">
+                                        <p>your contribution in</p>
+                                        <div class="d-flex">
+                                            <div class="contribution-item">
+                                                <h2>0.00</h2>
+                                                <span>USD</span>
+                                            </div>
+                                            <div class="contribution-item">
+                                                <h2>0.00</h2>
+                                                <span>ETH</span>
+                                            </div>
+                                            <div class="contribution-item">
+                                                <h2>0.00</h2>
+                                                <span>BTC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-wallet">
+                                    <a href="#" class="d-flex justify-content-between">Add your wallet address before
+                                        buy <span><img src="assets/image/right-arrow.png" alt=""
+                                                class="img-fluid"></span></a>
+                                </div>
+                                <div class="stage">
+                                    <div class="heading">
+                                        <span>Stage 1</span>
+                                        <span>Running</span>
+                                    </div>
+                                    <div class="convert">
+                                        <h2>1 ETFS = 0.00 USD</h2>
+                                        <p>1 USD = 0.00 ETFS</p>
+                                    </div>
+                                    <div class="countdown-time">
+                                        <h2>Sales End in</h2>
+                                        <div class="countdown">
+                                            <div>
+                                                <span class="number days">21</span>
+                                                <span>Days</span>
+                                            </div>
+                                            <div>
+                                                <span class="number hours">17</span>
+                                                <span>Hours</span>
+                                            </div>
+                                            <div>
+                                                <span class="number minutes">09</span>
+                                                <span>Mins</span>
+                                            </div>
+                                            <div>
+                                                <span class="number seconds">31</span>
+                                                <span>Sec</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sale-progress">
+                                        <h2 class="text-uppercase">Token sale progress</h2>
+                                        <div class="raised-amount">
+                                            <div class="range-wrapper text-center">
+                                                <div class="range-total d-flex justify-content-between">
+                                                    <div class="d-flex flex-column align-items-start">
+                                                        <span class="text-uppercase">raised amount</span>
+                                                        <span class="text-uppercase">0.00 ETFS</span>
+                                                    </div>
+                                                    <div class="d-flex flex-column align-items-start">
+                                                        <span class="text-uppercase">raised amount</span>
+                                                        <span class="text-uppercase">0.00 ETFS</span>
+                                                    </div>
+                                                </div>
+                                                <input id="rangeInput" type="range" min="0" max="100" value="50"
+                                                    step="1">
+                                            </div>
+                                        </div>
+                                        <div class="buy-button">
+                                            <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Buy ETFS Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- buy etf section end  -->
+
+
+
+    <!-- modal start  -->
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="payment-method modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Payment Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="payment-detail-box1">
+                        <div class="payment-item d-flex justify-content-between align-items-center">
+                            <span>Transaction Id</span>
+                            <span>6084705224</span>
+                        </div>
+                        <div class="payment-item d-flex justify-content-between align-items-center">
+                            <span>ETFSwap</span>
+                            <span>$0.022 USD</span>
+                        </div>
+                        <div class="payment-item d-flex justify-content-between align-items-center">
+                            <span>1inch Network</span>
+                            <span style="color: #3BBAF8;">251.52634419 1inch</span>
+                        </div>
+                        <div class="payment-item d-flex justify-content-between align-items-center">
+                            <span>Network</span>
+                            <span>ETFS</span>
+                        </div>
+                        <div class="payment-item d-flex justify-content-between align-items-center">
+                            <span>Price update in</span>
+                            <span class="d-flex"><img src="assets/image/clock.png" alt="" class="img-fluid"><div id="timer"></div></span>
+                        </div>
+                        <div class="comment">
+                            <p>Sending the funds through a different chain other than ETH will result in your funds
+                                being permanently lost.</p>
+                        </div>
+                    </div>
+                    <div class="payment-detail-box2">
+                        <div class="heading d-flex justify-content-between align-items-center">
+                            <span>Send</span>
+                            <a href="#" class="btn btn-dark">126.15686023</a>
+                            <span>1inch to</span>
+                        </div>
+                        <div class="copy-code">
+                            <input type="text" id="dummyInput" class="form-control" value="NFSGCOCHOBIDE53ONRCTKYLZGAYWY5TPGFQWW2DCI5IXCRBWKNWA" readonly>
+                            <button onclick="copyToClipboard()" class="text-uppercase"><span><img src="assets/image/copy-icon.png" alt="" class="img-fluid"></span>COPY</button>
+                        </div>
+                        <div class="qr-code">
+                           <div class="d-flex align-items-center justify-content-center">
+                            <div><a href="#" class="btn btn-dark qr-btn"><span><img src="assets/image/QR.png" alt="" class="img-fluid"></span>Show QR</a>
+                            </div>
+                            <div><a href="#" class="btn btn-dark"><span><img src="assets/image/MetaMask_Fox 1.png" alt="" class="img-fluid"></span>Payment using MetaMask</a></div>
+                            </div>
+                            <div class="qr-img text-center">
+                                <img src="assets/image/QR-img.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="payment-item d-flex justify-content-between align-items-center">
+                            <span>Status</span>
+                            <span>Awaiting for payment</span>
+                        </div>
+                        <div class="payment-item d-flex justify-content-between align-items-center">
+                            <span>Coin</span>
+                            <span>ETFS</span>
+                        </div>
+                        <div class="payment-item d-flex justify-content-between align-items-center">
+                            <span>Quantity</span>
+                            <span>2272.72727273 ETFS</span>
+                        </div>
+                        <div class="payment-item d-flex justify-content-between align-items-center">
+                            <span>Received</span>
+                            <span>ETFS</span>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary pay_btn" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop1"  data-bs-dismiss="modal">Payment sent</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal end  -->
+ 
+
+    <div class="payment-method modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Payment Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body m-0">
+                    <div class="confirm-msg text-center">
+                        <span><img src="assets/image/right.png" alt="" class="img-fluid"></span>
+                        <p>Your transaction is processing, please check your transaction history page for more details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

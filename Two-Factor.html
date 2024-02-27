@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Factor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body class="h-100">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/image/logo.png" alt="logo" class="topnav-logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">
+                                <span class="badge rounded-pill "> <i class='bx bx-bell'></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <button class="btn btn-primary">
+                                    <img src="assets/image/pic1.png" alt="flag" class="flag img-fluid"> English
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <button class="btn btn-primary btn-2">Connect Wallet</button>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <img src="assets/image/pic2.png" alt="profile" class="pic2 img-fluid">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Welcome <br>
+                                Lissa watson
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- navbar start -->
+        <ul class="nav nav-pills " id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Buy ETFS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Transactions</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Activity log</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Security </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
+
+        </div>
+        <!-- navbar end -->
+    </header>
+
+    <!-- section start -->
+    <section class="security-section">
+        <div class="container">
+            <div class="row flex-column gap-4">
+
+                <h1 class="heading">Security Settings</h1>
+                <div class="col-12 pt-4 w-90 d-flex flex-wrap">
+                    <div class="col-sm-6">
+                        <span>General Security Options</span>
+                        <div class="one">
+                            <div class="toggle-switch">
+                                <input class="toggle-input" id="toggle" type="checkbox">
+                                <label class="toggle-label" for="toggle"></label>
+                            </div>
+                            <p class="toggle-p1">Save my Activities Log.</p>
+                        </div>
+
+                        <div class="two">
+                            <div class="toggle-switch-2">
+                                <input class="toggle-input-2" id="toggle-2" type="checkbox">
+                                <label class="toggle-label-2" for="toggle-2"></label>
+                            </div>
+                            <p class="toggle-p2">Alert me by email for unusual activity</p>
+                        </div>
+
+
+                        <div class="manage">
+                            <span>Manage Notification</span>
+                            <div class="three">
+                                <div class="toggle-switch-3">
+                                    <input class="toggle-input-3" id="toggle-3" type="checkbox">
+                                    <label class="toggle-label-3" for="toggle-3"></label>
+                                </div>
+                                <p class="toggle-p3">Get Notifications for all purchase</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="update-btn col-sm-6">
+                        <button type="button" class="btn bg-primary">Update</button>
+                    </div>
+
+                </div>
+                <div class="col-12 pt-2 pt-lg-2 w-90 ">
+                    <div class="factor">
+                        <span>Two-Factor Verification</span>
+                        <p>Two-factor authentication is a method for protection your web account. When it is activated
+                            you need to enter not only your password, but also a special code. You can receive this code
+                            by in mobile app. Even if third person will find your password, then can't access with that
+                            code.</p>
+
+                        <!-- Tab panes -->
+                        <div class="row h-100">
+
+                            <div class="col-sm-12 d-flex flex-wrap">
+                                <span class="badge rounded-pill bg-light "> 1 </span>
+                                <p>Get the app. Download <a href="#">Google Authenticator</a> on your phone.</p>
+                            </div>
+
+                            <div class="col-sm-12 d-block flex-wrap mt-3">
+                                <div class="col-sm6">
+                                    <span class="badge rounded-pill bg-light "> 2 </span>
+                                    <p>Scan the QR code below. Alternatively, you can type <a href="#"> the secret
+                                            key</a> into your
+                                        authenticator app. </p>
+                                </div>
+
+                                <div class="outersm">
+                                    <div class="qr-code">
+                                        <img src="assets/image/pic6.png" alt="QR" class="QR img-fluid">
+                                        <div class="pic-4 border-1">
+                                            <a href="#">
+                                                <img src="assets/image/pic3.png" alt="logo" class="pic-3 img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- copy btn -->
+                                <div class="outer-2">
+                                    <div class="content-copy">
+                                        <label for="Secret" class="secret">Secret </label>
+                                        <div class="copy-text">
+                                            <input type="text" class="text" id="myInput"
+                                                placeholder="NFSGCOCHOBIDE53ONRCTKYLZGAYWY5TPGFQWW2DCI5IXCRBWKNWA">
+                                            <button onclick="myFunction()"><i
+                                                    class='bx bx-copy bx-rotate-90'></i>copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- copy btn end -->
+
+                            </div>
+
+                            <div class="col-sm-12 d-flex flex-wrap mt-2">
+                                <span class="badge rounded-pill bg-light "> 3 </span>
+                                <p>Verify your devices. Please enter the code to confirm.</p>
+                                <div class="form-2">
+                                    <input type="text" class="text" id="myInput-2"
+                                        placeholder="Enter Google authenticator code">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <ul class="nav justify-content-between mt-5" id="myTab" role="tablist">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="Verification" role="tabpanel"
+                                    aria-labelledby="toggle-tab" style="display: block;">
+                                    Current Status: Disabled</div>
+                                <div class="tab-pane" id="otherContent" role="tabpanel" aria-labelledby="toggle-tab"
+                                    style="display: none;">
+                                    Current Status: Enabled</div>
+                            </div>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="toggle-tab" type="button" role="tab"
+                                    aria-controls="Verification" id="OtherContent" aria-selected="true">Enable 2FA
+                                </button>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section end-->
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

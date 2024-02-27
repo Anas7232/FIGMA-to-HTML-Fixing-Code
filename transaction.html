@@ -1,0 +1,2515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style1.css">
+
+    <!-- js link  -->
+
+    
+
+</head>
+
+<body class="main-bg">
+    <div class="bg-img">
+        <img src="assets/image/buy-bg1.png" alt="" class="img-fluid">
+    </div>
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-3">
+                    <div class="logo">
+                        <img src="assets/image/logo.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-9">
+                    <div class="topbar-nav-right">
+
+                        <ul class="topbar-button">
+                            <li>
+                                <a href="#">
+                                    <img src="assets/image/bell.png" alt="" class="img-fluid">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-outline-light">
+                                    <span><img src="assets/image/country.png" alt="" class="img-fluid"></span>English
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    Connect Wallet
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="assets/image/profile.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="profile-user">
+                                <h3>Welcome</h3>
+                                <h2>Lissa watson</h2>
+                            </div>
+                            <div class="drop-button">
+                              <span class="down-icon">
+                                  <img src="assets/image/down.png" alt="" class="img-fluid">
+                              </span>
+                              <div class="user-dropdown">
+                                  <div class="user-pro">
+                                    <div class="user_img text-center">
+                                      <img src="assets/image/pro_img.png" alt="" class="img-fluid"> 
+                                    </div>
+                                    <h2>Lissa watsone (UD00001)</h2>
+                                    <p>lissawatson@gmail.com</p>
+                                  </div>
+                                  <span id="link1"><a href="#"><span><img src="assets/image/user-icon.png" alt="" class="img-fluid"></span>My profile</a></span>
+                                  <span id="link2"><a href="#"><span><img src="assets/image/lock.png" alt="" class="img-fluid"></span>Change password</a></span>
+                                  <span id="link3"><a href="#"><span><img src="assets/image/logout.png" alt="" class="img-fluid"></span>Logout</a></span>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <ul class="header-item">
+                    <li class="header-link-list">
+                        <a href="dashboard-home.html">Home</a>
+                    </li>
+                    <li class="header-link-list">
+                        <a href="buyetf.html">Buy ETFS</a>
+                    </li>
+                    <li class="header-link-list">
+                        <a href="transaction.html" class="active">Transactions</a>
+                    </li>
+                    <li class="header-link-list">
+                        <a href="activity.html">Activity log</a>
+                    </li>
+                    <li class="header-link-list">
+                        <a href="security1.html">Security </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="transaction-main">
+        <div class="container">
+            <div class="transaction-content">
+                <div class="heading">
+                    <h3>Transactions</h3>
+                    <span><a href="#" class="btn btn-primary">
+                        <span><img src="assets/image/plus_icon.png" alt="" class="img-fluid"></span>Add tokens
+                    </a></span>
+                </div>
+
+                <div class="tab-content-detail bg1">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Pending</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Approved</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Bonuses</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="false">All</button>
+                          </li>
+                          <div class="searchbar-input">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span><img src="assets/image/Frame.png" alt="" class="img-fluid"></span>
+                          </div>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="fresh-table full-color-orange">
+                              <div class="toolbar">
+                                <div class="ite11">
+                                  <span>Page</span>
+                                  <div class="select-pages">
+                                    <select id="pages" class="form-select">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                    </select>
+                                  </div>
+                                  <span>of 3</span>
+                                </div>
+                                <div class="pagination">
+                                  <button class="backward" id="first">first</button>
+                                  <button class="backward" id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                                  <button class="forward" id="last">last</button>
+                                  <div class="page-numbers" id="pageNumbers"></div>
+                                  <button class="forward" id="next"><i class="fa-solid fa-chevron-right"></i></button>
+
+                                </div>
+                              </div>
+                                <table id="paginatedTable" class="table">
+                                  <thead>
+                                    <th data-field="id">Tranx ID</th>
+                                    <th data-field="name">Tokens</th>
+                                    <th data-field="salary">Amount</th>
+                                    <th data-field="country">Base Amount</th>
+                                    <th data-field="city">Pay From</th>
+                                    <th data-field="actions">Type</th>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p>TNX006557</p>
+                                        <span>26 Jan, 2024 03:49 AM</span>
+                                      </td>
+                                      <td>
+                                        <p>+14000</p>
+                                        <span>ETFS</span>
+                                      </td>
+                                      <td>
+                                        <p>4953.05</p>
+                                        <span>RUB</span>
+                                      </td>
+                                      <td>
+                                        <p>57.5</p>
+                                        <span>USD</span>
+                                      </td>
+                                      <td>
+                                        <p>Pay via Bank</p>
+                                        <span>UD12719</span>
+                                      </td>
+                                      <td class="d-flex align-items-center justify-content-between h-100">
+                                        <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                        <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="fresh-table full-color-orange">
+                              <div class="toolbar">
+                                <div class="ite11">
+                                  <span>Page</span>
+                                  <div class="select-pages">
+                                    <select id="pages" class="form-select">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                    </select>
+                                  </div>
+                                  <span>of 3</span>
+                                </div>
+                                <div class="pagination">
+                                  <button class="backward" id="first">first</button>
+                                  <button class="backward" id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                                  <button class="forward" id="last">last</button>
+                                  <div class="page-numbers" id="pageNumbers"></div>
+                                  <button class="forward" id="next"><i class="fa-solid fa-chevron-right"></i></button>
+
+                                </div>
+                              </div>
+                                <table id="paginatedTable" class="table">
+                                    <thead>
+                                      <th data-field="id">Tranx ID</th>
+                                      <th data-field="name">Tokens</th>
+                                      <th data-field="salary">Amount</th>
+                                      <th data-field="country">Base Amount</th>
+                                      <th data-field="city">Pay From</th>
+                                      <th data-field="actions">Type</th>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="fresh-table full-color-orange">
+                              <div class="toolbar">
+                                <div class="ite11">
+                                  <span>Page</span>
+                                  <div class="select-pages">
+                                    <select id="pages" class="form-select">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                    </select>
+                                  </div>
+                                  <span>of 3</span>
+                                </div>
+                                <div class="pagination">
+                                  <button class="backward" id="first">first</button>
+                                  <button class="backward" id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                                  <button class="forward" id="last">last</button>
+                                  <div class="page-numbers" id="pageNumbers"></div>
+                                  <button class="forward" id="next"><i class="fa-solid fa-chevron-right"></i></button>
+
+                                </div>
+                              </div>
+                                <table id="paginatedTable" class="table">
+                                    <thead>
+                                      <th data-field="id">Tranx ID</th>
+                                      <th data-field="name">Tokens</th>
+                                      <th data-field="salary">Amount</th>
+                                      <th data-field="country">Base Amount</th>
+                                      <th data-field="city">Pay From</th>
+                                      <th data-field="actions">Type</th>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+                        </div>
+                        <div class="tab-pane fade" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <div class="fresh-table full-color-orange">
+                              <div class="toolbar">
+                                <div class="ite11">
+                                  <span>Page</span>
+                                  <div class="select-pages">
+                                    <select id="pages" class="form-select">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                    </select>
+                                  </div>
+                                  <span>of 3</span>
+                                </div>
+                                <div class="pagination">
+                                  <button class="backward" id="first">first</button>
+                                  <button class="backward" id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                                  <button class="forward" id="last">last</button>
+                                  <div class="page-numbers" id="pageNumbers"></div>
+                                  <button class="forward" id="next"><i class="fa-solid fa-chevron-right"></i></button>
+
+                                </div>
+                              </div>
+                                <table id="paginatedTable" class="table">
+                                    <thead>
+                                      <th data-field="id">Tranx ID</th>
+                                      <th data-field="name">Tokens</th>
+                                      <th data-field="salary">Amount</th>
+                                      <th data-field="country">Base Amount</th>
+                                      <th data-field="city">Pay From</th>
+                                      <th data-field="actions">Type</th>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>TNX006557</p>
+                                          <span>26 Jan, 2024 03:49 AM</span>
+                                        </td>
+                                        <td>
+                                          <p>+14000</p>
+                                          <span>ETFS</span>
+                                        </td>
+                                        <td>
+                                          <p>4953.05</p>
+                                          <span>RUB</span>
+                                        </td>
+                                        <td>
+                                          <p>57.5</p>
+                                          <span>USD</span>
+                                        </td>
+                                        <td>
+                                          <p>Pay via Bank</p>
+                                          <span>UD12719</span>
+                                        </td>
+                                        <td class="d-flex align-items-center justify-content-between h-100">
+                                          <span><a href="#" class="btn btn-secondary">Purchase</a></span>
+                                          <span><a href="#"><span class="dots-btn"><img src="assets/image/dots.png" alt="" class="img-fluid"></span></a></span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+
+
+               
+                  
+                        
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        var $table = $('#fresh-table')
+        var $alertBtn = $('#alertBtn')
+      
+        window.operateEvents = {
+          'click .like': function (e, value, row, index) {
+            alert('You click like icon, row: ' + JSON.stringify(row))
+            console.log(value, row, index)
+          },
+          'click .edit': function (e, value, row, index) {
+            alert('You click edit icon, row: ' + JSON.stringify(row))
+            console.log(value, row, index)
+          },
+          'click .remove': function (e, value, row, index) {
+            $table.bootstrapTable('remove', {
+              field: 'id',
+              values: [row.id]
+            })
+          }
+        }
+      
+        function operateFormatter(value, row, index) {
+          return [
+            '<a rel="tooltip" title="Like" class="table-action like" href="javascript:void(0)" title="Like">',
+              '<i class="fa fa-heart"></i>',
+            '</a>',
+            '<a rel="tooltip" title="Edit" class="table-action edit" href="javascript:void(0)" title="Edit">',
+              '<i class="fa fa-edit"></i>',
+            '</a>',
+            '<a rel="tooltip" title="Remove" class="table-action remove" href="javascript:void(0)" title="Remove">',
+              '<i class="fa fa-remove"></i>',
+            '</a>'
+          ].join('')
+        }
+      
+        $(function () {
+          $table.bootstrapTable({
+            classes: 'table table-hover table-striped',
+            toolbar: '.toolbar',
+      
+            search: true,
+            showRefresh: true,
+            showToggle: true,
+            showColumns: true,
+            pagination: true,
+            striped: true,
+            sortable: true,
+            pageSize: 8,
+            pageList: [8, 10, 25, 50, 100],
+      
+            formatShowingRows: function (pageFrom, pageTo, totalRows) {
+              return ''
+            },
+            formatRecordsPerPage: function (pageNumber) {
+              return pageNumber + ' rows visible'
+            }
+          })
+      
+          $alertBtn.click(function () {
+            alert('You pressed on Alert')
+          })
+        })
+      })
+
+      
+      </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const table = document.getElementById('fresh-table');
+      const rows = table.querySelectorAll('tbody tr');
+      const rowsPerPage = 7;
+      let currentPage = 0;
+  
+      function showPage(page) {
+          const startIndex = page * rowsPerPage;
+          const endIndex = startIndex + rowsPerPage;
+  
+          rows.forEach((row, index) => {
+              if (index >= startIndex && index < endIndex) {
+                  row.style.display = 'table-row';
+              } else {
+                  row.style.display = 'none';
+              }
+          });
+      }
+  
+      function goToPage(page) {
+          currentPage = page;
+          showPage(currentPage);
+      }
+  
+      function goToNextPage() {
+          if (currentPage < Math.ceil(rows.length / rowsPerPage) - 1) {
+              currentPage++;
+              showPage(currentPage);
+          }
+      }
+  
+      function goToPrevPage() {
+          if (currentPage > 0) {
+              currentPage--;
+              showPage(currentPage);
+          }
+      }
+  
+      document.getElementById('nextPage').addEventListener('click', function(event) {
+          event.preventDefault();
+          goToNextPage();
+      });
+  
+      document.getElementById('prevPage').addEventListener('click', function(event) {
+          event.preventDefault();
+          goToPrevPage();
+      });
+  
+      showPage(currentPage);
+  });
+  </script>
+
+
+<script>
+  $(document).ready(function(){
+    let pageList = new Array();
+let currentPage = 1;
+const numberPerPage = 12;
+const rows = Array.prototype.slice.call(document.querySelectorAll('tbody tr'));
+const firstBtn = document.getElementById('first');
+const lastBtn = document.getElementById('last');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const numberOfPages = getNumberOfPages();
+const pageNumbers = document.getElementById('pageNumbers');
+
+firstBtn.addEventListener('click', firstPage, false);
+lastBtn.addEventListener('click', lastPage, false);
+prevBtn.addEventListener('click', prevPage, false);
+nextBtn.addEventListener('click', nextPage, false);
+
+window.onload = load(numberOfPages);
+
+function getNumberOfPages() {
+return Math.ceil(rows.length / numberPerPage);
+}
+
+function generatePageNumbers(pageCount) {
+for (let j = 1; j <= pageCount; j++) {
+const pageNumber = document.createElement('span');
+pageNumber.innerHTML = j;
+pageNumber.classList.add('page-number');
+pageNumbers.appendChild(pageNumber);
+if (j === currentPage) {
+pageNumber.classList.add('active');
+}
+pageNumber.addEventListener('click', jumpToPage, false);
+}
+}
+
+function jumpToPage(event) {
+currentPage = event.target.innerHTML;
+loadRows();
+activePageNum(currentPage);
+}
+
+function activePageNum(activePage) {
+const pageNumbers = Array.prototype.slice.call(document.querySelectorAll('.page-number'));
+pageNumbers.forEach(function (pageNumber) {
+if (parseInt(pageNumber.innerHTML) === activePage) {
+pageNumber.classList.add('active');
+} else {
+pageNumber.classList.remove('active');
+}
+});
+}
+
+function nextPage() {
+currentPage += 1;
+loadRows();
+activePageNum(currentPage);
+}
+
+function prevPage() {
+currentPage -= 1;
+loadRows();
+activePageNum(currentPage);
+}
+
+function firstPage() {
+currentPage = 1;
+loadRows();
+activePageNum(currentPage);
+}
+
+function lastPage() {
+currentPage = numberOfPages;
+loadRows();
+activePageNum(currentPage);
+}
+
+function loadRows() {
+const start = (currentPage - 1) * numberPerPage;
+const end = start + numberPerPage;
+for (let i = 0; i < pageList.length; i++) {
+pageList[i].classList.add('hidden');
+}
+pageList = rows.slice(start, end);
+drawRows();
+buttonStates();
+}
+
+function drawRows() {
+for (let i = 0; i < pageList.length; i++) {
+pageList[i].classList.remove('hidden');
+}
+}
+
+function buttonStates() {
+document.getElementById('next').disabled = currentPage == numberOfPages ? true : false;
+document.getElementById('prev').disabled = currentPage == 1 ? true : false;
+document.getElementById('first').disabled = currentPage == 1 ? true : false;
+document.getElementById('last').disabled = currentPage == numberOfPages ? true : false;
+}
+
+function load(pageCount) {
+generatePageNumbers(numberOfPages);
+loadRows();
+}
+  })
+</script>
+
+      
+    <script src="assets/js/custom.js"></script>
+      <script src="https://unpkg.com/bootstrap-table/dist/bootstrap-table.min.js"></script>
+
+      <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+
+</html>
